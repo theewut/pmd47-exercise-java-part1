@@ -1,6 +1,6 @@
 public class Loop {
     public static void main(String[] args) {
-        //Lap6
+        //Lab6
         WhileLoop();
         //sum 1 to 10
         Sum(10);
@@ -13,7 +13,18 @@ public class Loop {
             System.out.println("intArray :"+ i);  
         }
 
+        //Lab7
         DoWhileLoop();
+        int n = 10;
+        do {
+            if(n % 2 == 0){
+                System.out.println("Entered number ["+n+"] is even");
+            }
+            n--;
+        }
+        while(n > 0);
+
+        //Lab8
         BreakFor();
     }
 
@@ -47,10 +58,21 @@ public class Loop {
 
 
     public static void DoWhileLoop(){
-
+        int counter  = 20;
+        do{
+            System.out.println("counter :" + counter);
+            counter--;
+        }while(counter > 0);
     }
 
     public static void BreakFor(){
-
+        int count = 20;
+        for(int i=0; i<=count; i++){
+            if(i == 11){
+                System.out.println("!!!!STOP!!! break when count = " + i);
+                break;
+            }
+            System.out.println("count: " + i);
+        }
     }
 }
